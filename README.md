@@ -1,9 +1,40 @@
-# Cursor AI 提示词指南
+# Cursor AI 提示词指南 🚀
+
+<p align="center">
+  <!-- 这里可以放置项目徽标 -->
+  <img src="https://cursor.sh/apple-touch-icon.png" alt="Cursor AI Logo" width="200"/>
+</p>
+
+> 全面的AI编程助手使用教程，包含各类提示词模板、最佳实践和高级技巧
+
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/cursor-ai-prompts)](https://github.com/yourusername/cursor-ai-prompts/stargazers)
+[![GitHub license](https://img.shields.io/github/license/yourusername/cursor-ai-prompts)](https://github.com/yourusername/cursor-ai-prompts/blob/master/LICENSE)
+
+## 📑 目录
+
+- [简介](#简介)
+- [什么是提示词](#什么是提示词-prompts)
+- [Cursor AI 如何使用提示词](#cursor-ai-如何使用提示词)
+- [提示词类型](#提示词类型)
+- [有效提示词的优势](#有效提示词的优势)
+- [撰写有效提示词的技巧](#撰写有效提示词的技巧)
+- [高级提示词技巧](#高级提示词技巧)
+- [常见提示词模板](#常见提示词模板)
+- [进阶应用](#进阶应用)
+- [参考资料](#参考资料)
+- [贡献指南](#贡献指南)
+- [许可证](#许可证)
+
+## 🌟 简介
+
+Cursor AI 是一款强大的AI编程助手，通过自然语言提示词帮助开发者提升编程效率。本指南提供了全面的提示词编写技巧和模板，帮助您充分利用Cursor AI的能力。
 
 ## 什么是提示词 (Prompts)?
+
 提示词是您向AI表达编码需求的自然语言指令，从简单请求到复杂任务不等。
 
 ## Cursor AI 如何使用提示词
+
 通过理解您提示词的意图，Cursor AI 可以：
 - 生成新代码片段
 - 重构现有代码
@@ -13,6 +44,7 @@
 ## 提示词类型
 
 ### 1. 代码生成提示词
+
 ```
 Create a Python function that sorts a list of integers in ascending order.
 ```
@@ -24,6 +56,7 @@ def sort_numbers(numbers):
 ```
 
 ### 2. 重构提示词
+
 ```
 Optimize this JavaScript function for better performance.
 ```
@@ -38,7 +71,6 @@ function calculateSum(arr) {
     }
     return sum;
 }
-
 // 优化后的函数
 function calculateSum(arr) {
     return arr.reduce((acc, curr) => acc + curr, 0);
@@ -46,6 +78,7 @@ function calculateSum(arr) {
 ```
 
 ### 3. 调试提示词
+
 ```
 Identify and fix the bug in this C++ code that causes a segmentation fault.
 ```
@@ -55,13 +88,13 @@ Identify and fix the bug in this C++ code that causes a segmentation fault.
 // 存在问题的代码
 int* ptr = NULL;
 *ptr = 10; // 解引用空指针
-
 // 修复后的代码
 int value = 10;
 int* ptr = &value;
 ```
 
 ### 4. 文档提示词
+
 ```
 Generate a docstring for this Java function explaining its purpose and parameters.
 ```
@@ -80,6 +113,7 @@ public int factorial(int n) {
 ```
 
 ## 有效提示词的优势
+
 - 提高代码准确性
 - 节省开发时间
 - 提升代码质量
@@ -88,29 +122,31 @@ public int factorial(int n) {
 ## 撰写有效提示词的技巧
 
 ### 1. 保持明确和具体
+
 ```
 // 模糊提示词
 Create a login form.
-
 // 明确提示词
 Create an HTML login form with username and password fields, 
 including validation and a "Remember me" checkbox.
 ```
 
 ### 2. 提供上下文
+
 ```
 // 缺乏上下文
 Fix this function.
-
 // 有上下文
 Fix this Node.js authentication function that currently 
 doesn't properly validate JWT tokens.
 ```
 
 ### 3. 迭代改进
+
 如果初始输出不理想，精炼您的提示词或要求调整。
 
 ### 4. 步骤化指令
+
 ```
 Create a React component that:
 1. Fetches data from an API
@@ -122,6 +158,7 @@ Create a React component that:
 ## 高级提示词技巧
 
 ### 1. 使用XML结构化提示词
+
 ```xml
 <task>
   <description>Create a login API endpoint</description>
@@ -138,6 +175,7 @@ Create a React component that:
 ```
 
 ### 2. 规则定义(Rules)
+
 ```
 Generate a React component following these rules:
 <rules>
@@ -149,9 +187,9 @@ Generate a React component following these rules:
 ```
 
 ### 3. 示例与反例
+
 ```
 Write a regex for valid phone numbers.
-
 Valid: (123) 456-7890, 123-456-7890
 Invalid: 12345, 123-456-78901
 ```
@@ -159,6 +197,7 @@ Invalid: 12345, 123-456-78901
 ## 常见提示词模板
 
 ### 前端开发
+
 ```
 Create a responsive navigation component in React that:
 1. Collapses to hamburger menu on mobile
@@ -167,6 +206,7 @@ Create a responsive navigation component in React that:
 ```
 
 ### 后端开发
+
 ```
 Create an Express.js API endpoint for user registration that:
 1. Validates input data
@@ -176,6 +216,7 @@ Create an Express.js API endpoint for user registration that:
 ```
 
 ### 数据处理
+
 ```
 Write a Python function that processes a CSV file to:
 1. Clean missing values
@@ -186,6 +227,7 @@ Write a Python function that processes a CSV file to:
 ## 进阶应用
 
 ### 项目规则集
+
 ```xml
 <project_rules>
   <code_style>
@@ -199,6 +241,7 @@ Write a Python function that processes a CSV file to:
 ```
 
 ### 多模块开发
+
 ```xml
 <project>
   <module name="Authentication">
@@ -211,5 +254,16 @@ Write a Python function that processes a CSV file to:
 ```
 
 ## 参考资料
+
 - [Cursor AI Prompts](https://github.com/mergisi/cursor-ai-prompts)
 - [Cursor AI 官方网站](https://cursor.sh)
+
+## 👥 贡献指南
+
+欢迎贡献更多有用的提示词模板和技巧！请遵循以下步骤：
+
+1. Fork 本仓库
+2. 创建您的特性分支 (`git checkout -b feature/amazing-prompt`)
+3. 提交您的更改 (`git commit -m 'Add some amazing prompt'`)
+4. 推送到分支 (`git push origin feature/amazing-prompt`)
+5. 开启一个 Pull Request
